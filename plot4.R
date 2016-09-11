@@ -13,7 +13,7 @@ data$Date <- paste(data$Date, data$Time)
 data$Date <- strptime(data$Date, "%e/%m/%Y %H:%M:%S")
 
 par(mfcol = c(2,2))
-#Plot the histogram
+#Plot
 with(data, {
   plot(Date, Global_active_power, type="l", ylab="Global Active Power", xlab = "")
   plot(Date, Sub_metering_1, type="l", xlab ="", ylab="Energy sub metering")

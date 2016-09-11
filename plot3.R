@@ -13,7 +13,7 @@ data$Date <- paste(data$Date, data$Time)
 data$Date <- strptime(data$Date, "%e/%m/%Y %H:%M:%S")
 
 par(mfrow =c(1,1), mar=c(6,6,2,2))
-#Plot the histogram
+#Plot
 plot(data$Date, data$Sub_metering_1, type="l", xlab ="", ylab="Energy sub metering")
 lines(data$Date, data$Sub_metering_2, type="l", col ="red")
 lines(data$Date, data$Sub_metering_3, type="l", col = "blue")

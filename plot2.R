@@ -13,7 +13,7 @@ data$Date <- paste(data$Date, data$Time)
 data$Date <- strptime(data$Date, "%e/%m/%Y %H:%M:%S")
 
 par(mfrow =c(1,1), mar=c(6,6,2,2))
-#Plot the histogram
+#Plot
 plot(data$Date, data$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab = "")
 
 #Copy to plot2.png
